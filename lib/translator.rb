@@ -9,8 +9,9 @@ def load_library(file)
     i = 0
     hash[:get_meaning][value[1]] = key
     while i < value.length
-    hash[:get_emoticon][value[0]] = key
-
+      hash[:get_emoticon][value[0]] = hash[:get_meaning][value[i]] 
+      i += 1
+      end
     
     end
   return hash
