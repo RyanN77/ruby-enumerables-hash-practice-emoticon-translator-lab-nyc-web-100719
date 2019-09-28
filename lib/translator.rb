@@ -11,7 +11,6 @@ def load_library(file)
       hash[:get_emoticon][value[0]] = key1
       end
     end
-    print hash[:get_meaning]
   return hash
 end
 
