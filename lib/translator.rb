@@ -9,6 +9,9 @@ def load_library(file)
     i = 0
     hash[:get_meaning][value[1]] = key
     end
+    hash[:get_meaning].each do |key1, value1|
+      print key
+    end
     print hash[:get_meaning]
   return hash
 end
