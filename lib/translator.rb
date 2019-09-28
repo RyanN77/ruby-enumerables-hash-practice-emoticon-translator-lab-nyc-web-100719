@@ -11,8 +11,8 @@ def load_library(file)
     while i < value.length
       hash[:get_meaning][value][i] = key
       i += 1
+      end
     end
-  end
   return hash
 end
 
