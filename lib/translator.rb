@@ -6,6 +6,10 @@ def load_library(file)
   hash[:get_emoticon] = {}
   #JPN 
   hash[:get_meaning] = {}
+  file.each do |key, value|
+    print value
+  end
+  
   return hash
 end
 
