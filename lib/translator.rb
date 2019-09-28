@@ -11,13 +11,13 @@ def load_library(file)
       hash[:get_emoticon][value[0]] = key1
       end
     end
-
     print hash[:get_meaning]
   return hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file_path, emoticon)
+  load_library(file_path)
+  return emoticon
 end
 
 def get_english_meaning
