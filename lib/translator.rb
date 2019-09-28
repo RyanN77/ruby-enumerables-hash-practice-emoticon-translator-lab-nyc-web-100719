@@ -12,7 +12,7 @@ def load_library(file)
       hash[:get_meaning][value][i] = key
       i += 1
     end
-  
+  end
   return hash
 end
 
