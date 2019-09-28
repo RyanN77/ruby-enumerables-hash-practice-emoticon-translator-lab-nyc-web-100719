@@ -16,8 +16,8 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  print load_library(file_path)
-  hash[:get_meaning]
+  load_library(file_path)
+  print hash[:get_meaning][emoticon]
   return emoticon
 end
 
