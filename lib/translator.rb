@@ -2,7 +2,7 @@ require "yaml"
 
 def load_library(file)
   print YAML.load_file(file)
-  hash[:get_meaning] = []
+  hash = {}
   hash[:get_emoticon] = []
   return hash
 end
