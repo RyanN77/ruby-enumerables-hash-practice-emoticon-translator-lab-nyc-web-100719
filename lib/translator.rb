@@ -2,8 +2,8 @@ require "yaml"
 
 def load_library(file)
   print YAML.load_file(file)
-  hash = {:get_meaning => []}
-  hash = {:get_emoticon => []}
+  hash[:get_meaning] = []
+  hash[:get_emoticon] = []
   return hash
 end
 
