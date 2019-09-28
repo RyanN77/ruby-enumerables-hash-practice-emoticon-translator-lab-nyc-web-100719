@@ -1,7 +1,7 @@
 require "yaml"
 
 def load_library(file)
-  print YAML.load_file(file)
+  YAML.load_file(file)
   hash = {}
   hash[:get_emoticon] = {}
   #JPN 
