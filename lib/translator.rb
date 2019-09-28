@@ -25,11 +25,12 @@ end
 
 def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
-  print hash[:get_meaning].key?(emoticon)
+  if hash[:get_meaning].key?(emoticon)
   hash[:get_meaning].each do |key, value|
     if key == emoticon
       return value
     end
   end
   return "Sorry, that emoticon was not found"
+  end
 end
