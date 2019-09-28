@@ -4,6 +4,7 @@ def load_library(file)
   print YAML.load_file(file)
   hash = {}
   hash[:get_emoticon] = []
+  hash[:get_meaning] = []
   return hash
 end
 
