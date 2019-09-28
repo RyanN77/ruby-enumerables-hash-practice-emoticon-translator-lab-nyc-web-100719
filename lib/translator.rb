@@ -25,6 +25,10 @@ end
 
 def get_english_meaning(file_path, emoticon)
   hash = load_library(file_path)
-  print hash
+  hash[:get_emoticon].each do |key, value|
+    if key == emoticon
+      return value
+    end
+  end
   return emoticon
 end
