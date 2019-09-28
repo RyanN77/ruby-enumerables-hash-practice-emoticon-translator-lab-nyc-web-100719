@@ -6,7 +6,7 @@ def load_library(file)
   hash[:get_emoticon] = {}
   hash[:get_meaning] = {}
   YAML.load_file(file).each do |key, value|
-    hash[:get_meaning] = {value}
+    print value
   end  
   
   return hash
