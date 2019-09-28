@@ -1,10 +1,13 @@
 require "yaml"
 
 def load_library(file)
-  print YAML.load_file(file)
+
   hash = {}
   hash[:get_emoticon] = {}
   hash[:get_meaning] = {}
+  YAML.load_file(file).each do |key, value|
+    print value
+  end  
   
   return hash
 end
